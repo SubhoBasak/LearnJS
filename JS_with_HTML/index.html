@@ -1,23 +1,28 @@
 <html>
 <head>
     <title>Java Script</title>
-    <style type="text/css">
+    <style>
         .container{
             display: flex;
-            flex-direction: 'row';
         }
         .box{
-            width: 64px;
-            height: 64px;
+            width: 256px;
+            height: 256px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #222;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box box-1">Box 1</div>
-        <div class="box box-2">Box 2</div>
-        <div class="box box-3">Box 3</div>
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
     </div>
+
+    <button id='btn'>Change Layout</button>
 
     <script src="./script.js"></script>
 </body>
